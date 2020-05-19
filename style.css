@@ -1,0 +1,157 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: url(images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.choice {
+  display: none;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+.cover-container {
+  max-width: 42em;
+}
+
+.game,
+html,
+header {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+  font-family: 'Varela Round', sans-serif;
+  text-shadow: 2px 2px 2px rgba(69, 69, 69, 0.49);
+  padding: 17px 5px 0px 5px;
+}
+
+h2 {
+  /*font-weight: bold;*/
+  color: white;
+  /*  font-size: 50px;*/
+  font-family: 'Varela Round', sans-serif;
+  /*text-shadow: 2px 2px 2px #aaa;*/
+  /*  class: "cover-heading text-muted"*/
+}
+h3 {
+  font-family: 'Muli', serif;
+  color: black;
+  font-size: 20px;
+  padding: 0px 5px 0px 5px;
+}
+
+h6 {
+  font-family: 'Muli', serif;
+  color: white;
+  font-size: 15px;
+  padding: 0px 5px 0px 5px;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content fixed*/
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link {
+  padding: 0.25rem 0;
+  font-size: large;
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.mastfoot {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#playAgain {
+  cursor: pointer;
+}
+
+#result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#rules {
+  margin-top: 7%;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
